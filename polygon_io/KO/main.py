@@ -5,7 +5,7 @@ import requests
 
 import matplotlib
 
-from EMACrossStrategyPoly import EMACrossStrategyPoly
+from EMAStopLoss import EMAStopLoss
 
 matplotlib.use('Agg')
 
@@ -26,7 +26,7 @@ def strategy():
     logging.info("Downloading SPY 1-hour data from Polygon.io")
 
     # Construct the URL for the API request
-    url = f"https://api.polygon.io/v2/aggs/ticker/KO/range/1/day/2022-01-09/2024-08-28"
+    url = f"https://api.polygon.io/v2/aggs/ticker/KO/range/5/minute/2022-01-09/2024-08-28"
     params = {
         "adjusted": "true",
         "sort": "desc",
@@ -73,14 +73,14 @@ def strategy():
     cerebro.adddata(data_bt)
 
     logging.info("Adding strategy to Cerebro")
-    cerebro.addstrategy(EMACrossStrategyPoly)
+    cerebro.addstrategy(EMAStopLoss)
 
-    initial_cash = 10000.0
+    initial_cash = 1000
     cerebro.broker.setcash(initial_cash)
     logging.info(f"Initial capital set to: ${initial_cash}")
 
-    cerebro.broker.setcommission(commission=0.001)
-    logging.info("Commission set to 0.1% per trade")
+    cerebro.broker.setcommission(commission=0.000)
+    logging.info("Commission set to 0.0% per trade")
 
     logging.info("Running the backtest")
     cerebro.run()

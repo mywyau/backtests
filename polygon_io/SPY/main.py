@@ -5,7 +5,8 @@ import requests
 
 import matplotlib
 
-from EMACrossStrategyPoly import EMACrossStrategyPoly
+from EMAStrategy import EMAStrategy
+# from EMAStopLoss import EMAStopLoss
 
 matplotlib.use('Agg')
 
@@ -73,13 +74,14 @@ def strategy():
     cerebro.adddata(data_bt)
 
     logging.info("Adding strategy to Cerebro")
-    cerebro.addstrategy(EMACrossStrategyPoly)
+    cerebro.addstrategy(EMAStrategy)
+    # cerebro.addstrategy(EMAStopLoss)
 
-    initial_cash = 10000.0
+    initial_cash = 1000000
     cerebro.broker.setcash(initial_cash)
     logging.info(f"Initial capital set to: ${initial_cash}")
 
-    cerebro.broker.setcommission(commission=0.001)
+    cerebro.broker.setcommission(commission=0.000)
     logging.info("Commission set to 0.1% per trade")
 
     logging.info("Running the backtest")
