@@ -6,7 +6,9 @@ Makes api calls out to polygon.io for stock data, then runs some algorithms and 
 
 Trading strategy is to trade in tiny frations and only buy and almost never sell. Presumption is SPY always goes up due to current financial system, crashes happen but stonks always goes up. Inflation, pension funds etc. over a long period of time there is a lot of driving force to lift the market index. 
 
-We can see the tests show this automatic trading strategy, which is a simple rule based around exponential moving average executes buy trades during dips and sells near peaks, despite not being told to as it executes it just guesses when to buy and sell. The arrows showing buy and sell points nicely aggregate around peaks and troughs due to this rule tho. 
+We can see the tests show this automatic trading strategy, which is a simple rule based around exponential moving average executes buy trades during dips and sells near peaks, despite not being told to as it executes it just guesses when to buy and sell. The arrows showing buy and sell points nicely aggregate around peaks and troughs due to this rule tho.
+
+There is also a rule that if a certain position makes more than a specific percentage gain e.g. 1-2% the then we are to sell the position.
 
 Only major drawdown in portfolio is during a crash-like scenario as the buy and selling algorithm in place is to buy in tiny fractions into dips as the market declines. Once a certain max percentage of the portfolio is used up in buying stock then it stops purchases. 
 
