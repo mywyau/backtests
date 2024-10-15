@@ -8,6 +8,8 @@ Trading strategy is to trade in tiny frations and only buy and almost never sell
 
 We can see the tests show this automatic trading strategy, which is a simple rule based around exponential moving average executes buy trades during dips and sells near peaks. Only major drawdown in portfolio is during a crash-like scenario as the buy and selling algorithm in place is to buy in tiny fractions into dips as the market declines. Once a certain max percentage of the portfolio is used up in buying stock then it stops purchases. 
 
+The benefit in my eyes to this approach is typically having an algorithm buying into "troughs" and not "peaks", overal portfolio allocation is a lot lower on averae during normal market conditions so risk overall is lower but the overal gains made is lower than the market average. This would be good to test in more choppy market conditions/data.
+
 Max draw down is around 80% of portfolio value but typical drawdowns is a lot lower than that.
 
 Only goes back 2-3 years of data which is nothing. Only noticeable drop was around COVID 2020-ish about 30-40% drop in market but then money printer.
