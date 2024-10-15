@@ -20,7 +20,7 @@ Max draw down of cash on hand is around 80% of portfolio value but typical cash 
 
 Only goes back 2-3 years of data which is nothing. Only noticeable drop was around COVID 2020-ish about 30-40% drop in market but then money printer. Also since market history shows unprecedencted climbs/recovery in this period the account comes out on top after the 2 year period. Again to stress and re-iterate would be very interesting to see this tested on data with not so optimal conditions.
 
-As a comparison if we we're to all in and buy during the covid peak at aroud $460 and crashed, then held the position. The portfolio would of gained more than 20% since that peak. The issues is however we can never predict the future. Thus having smaller trades and using less portfolio purchasing power lets us dollar cost average and slowly hold out against bad economic conditions/stagnating periods. I feel the trade of in gains is made up by the sustainability aspect of this more conservative approach.
+As a comparison if we we're to all in and buy during the covid peak at aroud $460 and crashed, then held the position. The portfolio would of gained more than 20% since that peak. The issues is however we can never predict the future. Thus having smaller trades and using less portfolio purchasing power lets us dollar cost average and slowly hold out against bad economic conditions/stagnating periods. I feel the trade off in larger gains is made up by the sustainability aspect of this more conservative approach.
 
 
 ![Alt text](./images/example_1.png)
